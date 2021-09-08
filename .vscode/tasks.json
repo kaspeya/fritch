@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc.exe сборка активного файла",
+			"command": "D:\\Programs\\msys2\\mingw64\\bin\\gcc.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-Wall",
+				"-Wextra",
+				"-Wpedantic"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "компилятор: D:\\Programs\\msys2\\mingw64\\bin\\gcc.exe"
+		}
+	]
+}
